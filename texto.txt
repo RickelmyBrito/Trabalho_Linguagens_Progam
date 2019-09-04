@@ -1,0 +1,46 @@
+populaçao = [Pessoa(randrange(1,8), randrange(1,3), randrange(1,7), randrange(1,3), randrange(1,6)) for i in range(1000)]
+if populaçao[0].Rendimento_mensal==1:
+    Rendimento_mensal="Sem rendimento a 1/2 salário mínimo"
+elif populaçao[0].Rendimento_mensal==2:
+    Rendimento_mensal="Mais de 1/2 a 1 salário mínimo"
+elif populaçao[0].Rendimento_mensal==3:
+    Rendimento_mensal="Mais de 1 a 2 salários mínimos"
+elif populaçao[0].Rendimento_mensal==4:
+    Rendimento_mensal="Mais de 2 a 3 salários mínimos"
+elif populaçao[0].Rendimento_mensal==5:
+    Rendimento_mensal="Mais de 3 a 5 salários mínimos"
+elif populaçao[0].Rendimento_mensal==6:
+    Rendimento_mensal="Mais de 5 salários mínimos"
+else:
+    Rendimento_mensal="Sem declaraçao"
+if populaçao[0].Rede_de_ensino==1:
+    Rede_de_ensino="Publica"
+else:
+    Rede_de_ensino="Particular"
+if populaçao[0].Dificuldade==1:
+    Dificuldade="Dificuldade financeira"
+elif populaçao[0].Dificuldade==2:
+    Dificuldade="Dificuldade de acesso ao local do curso"
+elif populaçao[0].Dificuldade==3:
+    Dificuldade="Dificuldade de cumprir o horário do curso"
+elif populaçao[0].Dificuldade==4:
+    Dificuldade="Falta de tempo para estudar"
+elif populaçao[0].Dificuldade==5:
+    Dificuldade="Outra"
+else:
+    Dificuldade="Nao Havia"
+if populaçao[0].Sexo==1:
+    Sexo="Homem"
+else:
+    Sexo="Mulher"
+if populaçao[0].Regiao==1:
+    Regiao="Norte"
+elif populaçao[0].Regiao==2:
+    Regiao="Nordeste"
+elif populaçao[0].Regiao==3:
+    Regiao="Sudeste"
+elif populaçao[0].Regiao==4:
+    Regiao="Sul"
+else:
+    Regiao="Centro-Oeste"
+print(Rendimento_mensal, Rede_de_ensino, Dificuldade, Sexo, Regiao)
